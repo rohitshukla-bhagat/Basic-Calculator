@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    background-image: url(calculator-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.container-2{
+    width: 20em;
+    height: 26em;
+    background: rgba(172, 1, 1, 0.262);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(81, 5, 5, 0.574);
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+}
+.para{
+    margin-bottom: 10px;
+    color: white;
+    opacity: 0.3;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.div-row{
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#screen{
+    width: 13em;
+    height: 10vh;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    text-align: right;
+    border: 1px solid rgba(0, 0, 0, 0.358);
+    background-color: rgba(0, 0, 0, 0.655);
+    color: white;
+    box-shadow: 0px 0px 4px 0px;
+}
+.screen input{
+    font-size: 20px;
+}
+#screen:focus{
+    outline: none;
+}
+.btn{
+    margin: 2px;
+    width: 4.2em;
+    margin: 0px 6px;
+    border-radius: 50%;
+    border: none;
+    height: 3.5em;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 5px 0px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0px 0px 0px 0px;
+}
+.all-delete{
+    background-color: rgba(255, 0, 0, 0.718);
+}
+.delete{
+    color: red;
+}
+.equal-to{
+    background-color: rgb(1, 173, 1);
+}
+.math-sign{
+    color: rgb(21, 221, 232);
+}
+@media screen and (orientation: portrait) {
+    .container-2{
+        width: 15em;
+        height: 20em;
+    }
+    #screen{
+        width: 10em;
+        height: 3.5em;
+    }
+    .btn{
+        width: 2.8em;
+        font-size: 14px;
+        height: 2.2em;
+    }
+}
